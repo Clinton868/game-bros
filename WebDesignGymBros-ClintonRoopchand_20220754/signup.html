@@ -1,0 +1,148 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game Bros is an online gaming store offering consoles, games and accessories">
+    <meta name="keywords" content="gaming, PS5, Xbox, Games, accessories, Game Bros, gamers">
+
+    <title>Game Bros | Sign Up</title>
+
+
+     <!--Linking Style Sheet-->
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+    <!--HEADER SECTION-->
+   
+    <div class="hdrstyle">
+        
+         <div class="logo">
+            <a href="index.html">
+             <img src="images/logo.png"
+             alt="Game Bros logo" 
+             class="logosize">
+            </a>
+    </div>
+
+       <div class="hdrlbl">
+        <h1>Game Bros</h1>
+        <h2>Your #1 Gaming store for Consoles, Games and Accessories</h2>
+       </div>
+    </div>
+
+    <!--NAV SECTION FLUID-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">New Generation of Gaming</a>  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class=" navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="navbar nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar nav-link" href="about.html">About Us</a>  
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navbar nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="console.html">Consoles</a></li>
+            <li><a class="dropdown-item" href="game.html">Games</a></li>
+            <li><a class="dropdown-item" href="accessory.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="navbar nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="spcr1"></div>
+
+
+<!--MAIN CONTENT CONTAINER FLUID-->
+<h2 class="text-center mb-4">Create Your Game Bros Account</h2>
+
+
+<form class="row g-3 justify-content-center" onsubmit="redirectToHome(event)">
+  <div class="col-md-5">
+    <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationDefault01" value="" required placeholder="John">
+  </div>
+  <div class="col-md-5">
+    <label for="validationDefault02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationDefault02" value="" required placeholder="Cena">
+  </div>
+    <div class="col-md-10">
+      <label for="validationDefaultUsername" class="form-label">Email</label>
+      <div class="input-group">
+        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        <input type="email" class="form-control" id="validationDefaultEmail" placeholder="john.cena@example.com" aria-describedby="inputGroupPrepend2" required>
+      </div>
+    </div>
+
+  <div class="col-md-10">
+    <label for="validationDefaultUsername" class="form-label">Username</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername" placeholder="JohnCena007" aria-describedby="inputGroupPrepend2" required>
+    </div>
+  </div>
+  <div class="col-md-5">
+    <label for="validationDefault03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationDefault03" required placeholder="New York">
+  </div>
+  <div class="col-md-5">
+    <label for="validationDefault04" class="form-label">Country</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>Trinidad & Tobago</option>
+      <option>Jamaica</option>
+      <option>Barbados</option>
+      <option>Bahamas</option>
+      <option>Grenada</option>   
+      <option>Guyana</option>
+      <option>other</option>
+    </select>
+  </div>
+  <div class="col-md-10">
+    <label for="validationDefault05" class="form-label">Password</label>
+    <input type="password" class="form-control" id="validationDefault05" required placeholder="Enter a strong password">
+  </div>
+  
+  <div class="col-10">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <div class="col-10">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+<script>
+function redirectToHome(event) {
+    event.preventDefault(); // stops normal form submission
+    window.location.href = "index.html"; // redirect
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+Student Name: Clinton Roopchand
+Student ID: 20220754
+
+Date:22/03/2026
+
+Course Name: Web Design
+Course Code: INFO 0211
+
+Lecturer: S. Sylvester
+
+
+Title: Game Bros | Prototype Homepage
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game Bros is an online gaming store offering consoles, games and accessories">
+    <meta name="keywords" content="gaming, PS5, Xbox, Games, accessories, Game Bros, gamers">
+
+    <title>Game Bros | Gaming Store</title>
+
+
+     <!--Linking Style Sheet-->
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+
+<body>
+    <!--HEADER SECTION-->
+   
+    <div class="hdrstyle">
+        
+         <div class="logo">
+            <a href="index.html">
+             <img src="images/logo.png"
+             alt="Game Bros logo" 
+             class="logosize">
+            </a>
+    </div>
+
+       <div class="hdrlbl">
+        <h1>Game Bros</h1>
+        <h2>Your #1 Gaming store for Consoles, Games and Accessories</h2>
+       </div>
+    </div>
+
+    <!--NAV SECTION FLUID-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">New Generation of Gaming</a>  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class=" navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="navbar nav-link" href="about.html">About Us</a>  
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navbar nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="console.html">Consoles</a></li>
+            <li><a class="dropdown-item" href="game.html">Games</a></li>
+            <li><a class="dropdown-item" href="accessory.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="navbar nav-link" href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar nav-link" href="signup.html">Sign Up</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="spcr1"></div>
+
+
+    <!--MAIN CONTENT CONTAINER FLUID-->
+    <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="3000">
+      <a href="console.html">
+      <img src="images/mainimg.png" class="d-block w-100" alt="Exclusive Deals only at Game Bros Artwork">
+      <div class="carousel-caption d-none d-md-block">
+        </a>
+        <a href="console.html">
+          <h5 class="cproduct">Play Station 5</h5>
+        </a>
+        <p>Stay ahead with the latest PlayStation 5 console.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+        <a href="game.html">
+      <img src="images/mainimg2.png" class="d-block w-100" alt="Action shooter game artwork">
+      </a>
+      <div class="carousel-caption d-none d-md-block">
+        <a href="game.html">
+          <h5 class="cproduct">Action Shooter Game</h5>
+        </a>
+        <p>Experience intense combat in the latest action shooter game.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+        <a href="accessory.html">
+      <img src="images/mainimg3.png" class="d-block w-100" alt="deluxe gaming chair in limited stock artwork">
+      <div class="carousel-caption d-none d-md-block">
+        </a>
+        <a href="accessory.html">
+          <h5 class="cproduct">Limited Stocks Available</h5>
+        </a>
+        <p>Get your hands on these exclusive items before they're gone!</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<div class="spcr2"></div>
+    
+        <!--FEATURED PRODUCTS-->
+
+       <h3 class="display">Featured Products</h3>
+        <div class="row">
+            <div class="col-sm-6 text-center">
+                
+                    <img class="ftrimg" 
+                    src="images/ftr1.png"
+                    alt="Featured Offer 1">
+                    <div class="ftrimg-caption">
+                        <h4 class="product">Play Station 5 Variants  <button class="ftrbt">Browse more</button></h4>
+                         
+          
+                    </div>
+            </div>
+
+            <div class="col-sm-6 text-center">
+
+                <img class="ftrimg"
+                src="images/ftr2.png"
+                alt="Featured Offer 2">
+                <div class="ftrimg-caption">
+                    <h4 class="product">Virtual Gaming  Headset <button class="ftrbt">Browse more</button></h4>
+                </div>
+            </div>
+          </div>
+
+
+    <!--FOOTER CONTENT-->    
+    <div class="spcr3"></div>
+    <footer class="footer">
+        <div class="row fotrstyle">
+            <div class="col-sm-4">
+                <h3>Contact Us</h3>
+                <p>123 Gaming Street, Game City, GC 12345</p>
+                <a href="mailto:info@gamebros.com">Email Us</a>
+                <a href="tel:+12345678901">| Call Us</a>
+            </div>
+
+            <div class="col-sm-4">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com/gamebros" target="_blank">Facebook</a> |
+                <a href="https://twitter.com/gamebros" target="_blank">Twitter</a> |
+                <a href="https://instagram.com/gamebros" target="_blank">Instagram</a>
+            </div>
+
+            <div class="col-sm-4 text-center">
+                <h3>Browse More</h3>
+                <div class="nav-item dropdown d-flex justify-content-center">
+          <a class="navbar nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="console.html">Consoles</a></li>
+            <li><a class="dropdown-item" href="game.html">Games</a></li>
+            <li><a class="dropdown-item" href="accessory.html">Accessories</a></li>
+          </ul>
+        </div>
+            </div>
+
+            <div class="spcr3"></div>
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <p>Copyright &copy; 2024 Game Bros. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
